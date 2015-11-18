@@ -19,7 +19,7 @@ logger.emit('error', 'This is the first error');
 logger.emit('error', 'This is the second error');
 
 
-/* Run the following cmd to start node and run the server
+/* Run the following cmd to start node and listen/generate events
  node '2 - Events.js'
 
 You should see the following output:
