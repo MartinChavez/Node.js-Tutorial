@@ -1,3 +1,37 @@
+/*
+Node.js
+
+- Allows you to build scalable network applications using JavaScript on the server-side.
+- Runs on top of the V8 Javascript Runtime (same that is running on the Chrome browser)
+
+What can you build?
+
+- Websocket Server
+- File Upload client
+- Ad Server
+- Real-time data apps
+
+Misconceptions
+
+- Node.js is not a web framework
+- Node.js is not multi-threaded
+
+
+The event loop
+
+- The first time node interprets the js code and executes it, it register the events it finds
+- Once the script has been executed, node starts the event loop, which checks for events continuously
+- Once node finds a new event, it will trigger the callback associated with such event
+- Allows us to write code that is non-blocking
+
+The event Queue
+
+- Queues the events for the event loop
+- Processes the events, one at a time
+
+*/
+
+
 /* How to run node.js */
 // In this example, we will create a node server and serve an HTTP response
 
