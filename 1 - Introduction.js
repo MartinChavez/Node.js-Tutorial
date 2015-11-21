@@ -19,7 +19,7 @@ Misconceptions
 
 The event loop
 
-- The first time node interprets the js code and executes it, it register the events it finds
+- The first time node interprets the js code and executes it, it registers the events it finds
 - Once the script has been executed, node starts the event loop, which checks for events continuously
 - Once node finds a new event, it will trigger the callback associated with such event
 - Allows us to write code that is non-blocking
