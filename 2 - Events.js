@@ -1,6 +1,6 @@
 /* Events
 
-- Similar to how the DOM works, it triggers events and handles the callback functions
+- Similar to how the DOM works, Node.js triggers events and handles the callback functions
 - Many objects in Node emit events, in general, these are inherited from the EventEmitter constructor
 */
 // Loading the EventEmitter constructor
