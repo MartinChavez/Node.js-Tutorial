@@ -8,6 +8,9 @@ Topics
 ================
 - Introduction
 - Events
+- Streams
+- File System
+- Uploading Files
 
 Suggested prerequisites
 ====================
