@@ -1,4 +1,4 @@
-<a name="README"><img src="http://www.dmuth.org/files/nodejs-dark.png" /></a>
+<a name="README"><img src="http://www.dmuth.org/files/nodejs-dark.png" heigth="200px" width="200px"/></a>
 
 # Node.js: Tutorial
 
