@@ -9,7 +9,7 @@ Topics
 - Introduction
 - Events
 - Streams
-- File System
+- File System Manipulation
 - Uploading Files
 
 Suggested prerequisites
