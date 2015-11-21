@@ -13,8 +13,6 @@ http.createServer(function(request, response){
         response.end('uploaded');
     });
 }).listen(8080);
-
-
 /*
  Run the following cmd to start node and read the file
 
