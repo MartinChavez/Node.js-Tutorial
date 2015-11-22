@@ -4,7 +4,7 @@ var moduleFunction = require('./7 - modules');
 moduleFunction();
 
 
-var makeRequest = require('./9 - Http Module');
+var makeRequest = require('./9 - http module');
 makeRequest('http req 1');
 makeRequest('http req 2');
 

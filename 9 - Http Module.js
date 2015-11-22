@@ -11,10 +11,10 @@ var makeRequest = function (message) {
 
     // Initialize the request
     var request = http.request(options, function (response) {
-        // Scpecifies the callback function when data gets received
-        response.on('data', function () {
+        // Specifies the callback function when data gets received
+        response.on('data', function (data) {
             // In this case, logs the response body
-            console.log(data);
+            console.log(data.toString());
         });
     });
     // Begins the request
