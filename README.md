@@ -11,6 +11,8 @@ Topics
 - Streams
 - File System Manipulation
 - Uploading Files
+- Modules
+- NPM
 
 Suggested prerequisites
 ====================
