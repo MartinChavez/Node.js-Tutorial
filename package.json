@@ -1,5 +1,7 @@
-
 {
-  "name": "application-name",
-  "version": "0.0.1"
+  "name": "NodeJs-Tutorial",
+  "version": "0.0.1",
+  "dependencies":{
+    "request": "2.67.0"
+  }
 }
