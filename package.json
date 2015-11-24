@@ -1,7 +1,8 @@
 {
   "name": "NodeJs-Tutorial",
   "version": "0.0.1",
-  "dependencies":{
+  "dependencies": {
+    "express": "^4.13.3",
     "request": "2.67.0"
   }
 }
