@@ -3,16 +3,16 @@ Express
 
 - Node.js is very low-level (generally, you would need a framework to build a web app)
 - Express is a web development framework for Node.js
-
 */
 
 /*
 Install express by running:
 'npm install --save express'
-Note: By using '--save', not only it intalls the module, but also,it adds it to the dependencies file(package.json)
+Note: By using the '--save' flag, aprt from installing the module, it adds the required information
+to the dependencies file (package.json)
 */
 
-// In order to strat the web application, we need to load the library
+// In order to start the web application, we need to load the library
 var express = require('express');
 
 // Create an instance of express
