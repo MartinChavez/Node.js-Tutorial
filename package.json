@@ -2,7 +2,9 @@
   "name": "NodeJs-Tutorial",
   "version": "0.0.1",
   "dependencies": {
+    "crypto": "0.0.3",
     "express": "^4.13.3",
-    "request": "2.67.0"
+    "request": "2.67.0",
+    "url": "^0.11.0"
   }
 }
