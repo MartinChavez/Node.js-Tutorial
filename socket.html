@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Socket.io</title>
+    <!-- Include the socket.io library, Socket.IO servers automatically serve the client -->
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+<script>
+    <!-- Connect to the server -->
+    var socket = io.connect('http://localhost:8080');
+    <!-- Listens to the 'messages' event -->
+    socket.on('messages', function(data){
+            console.log(data.socket);
+    });
+</script>
+</body>
+</html>
