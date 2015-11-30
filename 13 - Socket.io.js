@@ -24,6 +24,13 @@ io.on('connection', function(client){
     console.log('Client connected...');
     // Emits the 'messages' event on the clients and sends the object {socket:io}
     client.emit('messages', {socket:'i.o'})
+
+    client.on('fromClient', function(data){
+        console.log(data);
+        // Use broadcast to send a message to all the clients that are connected
+        client.broadcast.emit("fromServer", {fromServer:'fromServer'});
+    });
+
 })
 
 app.get('/', function(req,res){
@@ -41,5 +48,6 @@ Run the following cmd to start node and create the scoket.io server:
 On your browser: localhost:8080
 
 Expected response:
- - console.log with "i.o"
+ - console.log with "i.o", numbers should be printed
+ - On node, the numbers should keep counting up
  */

@@ -8,12 +8,21 @@
 </head>
 <body>
 <script>
-    <!-- Connect to the server -->
+
+    // Connect to the server
     var socket = io.connect('http://localhost:8080');
+
     <!-- Listens to the 'messages' event -->
-    socket.on('messages', function(data){
-            console.log(data.socket);
+    socket.on('messages', function (data) {
+        console.log(data.socket);
     });
+    socket.on('fromServer', function (data) {
+        console.log(data.fromServer);
+    });
+
+    <!-- Creates a new message and sends it to the server -->
+    socket.emit('fromClient', "fromClient");
+
 </script>
 </body>
 </html>
