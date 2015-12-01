@@ -14,6 +14,9 @@ Topics
 - Modules
 - NPM
 - Express
+- Express Routes
+- Socket.io
+- Persisting Data with Redis
 
 Suggested prerequisites
 ====================
