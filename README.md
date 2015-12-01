@@ -2,7 +2,7 @@
 
 # Node.js: Tutorial
 
-Use this tutorial as a guide to learn Node.js. Each unit contains an annotated lesson.
+Use this tutorial as a guide to learn Node.js. Each unit contains an annotated lesson with working examples.
 
 Topics
 ================
