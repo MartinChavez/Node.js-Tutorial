@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for lib/parsers/javascript.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../prettify.css">
+    <link rel="stylesheet" href="../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">lib/parsers/javascript.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(101 / 101)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(41 / 41)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(8 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(101 / 101)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">lib/parsers/</a> &#187; javascript.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-yes">965</span>
+<span class="cline-any cline-yes">965</span>
+<span class="cline-any cline-yes">965</span>
+<span class="cline-any cline-yes">965</span>
+<span class="cline-any cline-yes">965</span>
+<span class="cline-any cline-yes">965</span>
+<span class="cline-any cline-yes">965</span>
+<span class="cline-any cline-yes">965</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-yes">43</span>
+<span class="cline-any cline-yes">43</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-yes">10929</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10929</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2795</span>
+<span class="cline-any cline-yes">2785</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2785</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2785</span>
+<span class="cline-any cline-yes">1932</span>
+<span class="cline-any cline-yes">853</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">738</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">115</span>
+<span class="cline-any cline-yes">8134</span>
+<span class="cline-any cline-yes">4994</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4990</span>
+<span class="cline-any cline-yes">111</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4879</span>
+<span class="cline-any cline-yes">4879</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4879</span>
+<span class="cline-any cline-yes">23</span>
+<span class="cline-any cline-yes">23</span>
+<span class="cline-any cline-yes">23</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4856</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4856</span>
+<span class="cline-any cline-yes">3140</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">532</span>
+<span class="cline-any cline-yes">532</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">528</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">521</span>
+<span class="cline-any cline-yes">521</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">521</span>
+<span class="cline-any cline-yes">4147</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4145</span>
+<span class="cline-any cline-yes">4122</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">496</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2608</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-yes">2713</span>
+<span class="cline-any cline-yes">50</span>
+<span class="cline-any cline-yes">50</span>
+<span class="cline-any cline-yes">50</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2663</span>
+<span class="cline-any cline-yes">16</span>
+<span class="cline-any cline-yes">16</span>
+<span class="cline-any cline-yes">16</span>
+<span class="cline-any cline-yes">16</span>
+<span class="cline-any cline-yes">16</span>
+<span class="cline-any cline-yes">16</span>
+<span class="cline-any cline-yes">2647</span>
+<span class="cline-any cline-yes">2623</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2663</span>
+<span class="cline-any cline-yes">2663</span>
+<span class="cline-any cline-yes">2663</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6784</span>
+<span class="cline-any cline-yes">6784</span>
+<span class="cline-any cline-yes">6784</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">43</span>
+<span class="cline-any cline-yes">43</span>
+<span class="cline-any cline-yes">43</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-yes">2663</span>
+<span class="cline-any cline-yes">2663</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2663</span>
+<span class="cline-any cline-yes">4133</span>
+<span class="cline-any cline-yes">97</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4036</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4121</span>
+<span class="cline-any cline-yes">4121</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2651</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-yes">5526</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5518</span>
+<span class="cline-any cline-yes">5518</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-yes">8321</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8321</span>
+<span class="cline-any cline-yes">23375</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23375</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8303</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+var util = require('util');
+&nbsp;
+function JavascriptReplyParser() {
+    this.name = exports.name;
+    this._buffer = new Buffer(0);
+    this._offset = 0;
+    this._big_offset = 0;
+    this._chunks_size = 0;
+    this._buffers = [];
+    this._type = 0;
+    this._protocol_error = false;
+}
+&nbsp;
+function IncompleteReadBuffer(message) {
+    this.name = 'IncompleteReadBuffer';
+    this.message = message;
+}
+util.inherits(IncompleteReadBuffer, Error);
+&nbsp;
+JavascriptReplyParser.prototype._parseResult = function (type) {
+    var start = 0,
+        end = 0,
+        offset = 0,
+        packetHeader = 0,
+        res,
+        reply;
+&nbsp;
+    if (type === 43 || type === 58 || type === 45) { // + or : or -
+        // Up to the delimiter
+        end = this._packetEndOffset();
+        start = this._offset;
+        // Include the delimiter
+        this._offset = end + 2;
+&nbsp;
+        if (type === 43) {
+            return this._buffer.slice(start, end);
+        } else if (type === 58) {
+            // Return the coerced numeric value
+            return +this._buffer.toString('ascii', start, end);
+        }
+        return new Error(this._buffer.toString('utf-8', start, end));
+    } else if (type === 36) { // $
+        packetHeader = this.parseHeader();
+&nbsp;
+        // Packets with a size of -1 are considered null
+        if (packetHeader === -1) {
+            return null;
+        }
+        end = this._offset + packetHeader;
+        start = this._offset;
+&nbsp;
+        if (end + 2 &gt; this._buffer.length) {
+            this._chunks_size = this._buffer.length - this._offset - 2;
+            this._big_offset = packetHeader;
+            throw new IncompleteReadBuffer('Wait for more data.');
+        }
+        // Set the offset to after the delimiter
+        this._offset = end + 2;
+&nbsp;
+        return this._buffer.slice(start, end);
+    } else if (type === 42) { // *
+        // Set a rewind point, as the packet is larger than the buffer in memory
+        offset = this._offset;
+        packetHeader = this.parseHeader();
+&nbsp;
+        if (packetHeader === -1) {
+            return null;
+        }
+        reply = [];
+        offset = this._offset - 1;
+&nbsp;
+        for (var i = 0; i &lt; packetHeader; i++) {
+            if (this._offset &gt;= this._buffer.length) {
+                throw new IncompleteReadBuffer('Wait for more data.');
+            }
+            res = this._parseResult(this._buffer[this._offset++]);
+            reply.push(res);
+        }
+        return reply;
+    } else {
+        return void 0;
+    }
+};
+&nbsp;
+JavascriptReplyParser.prototype.execute = function (buffer) {
+    if (this._chunks_size !== 0 &amp;&amp; this._big_offset &gt; this._chunks_size + buffer.length) {
+        this._buffers.push(buffer);
+        this._chunks_size += buffer.length;
+        return;
+    }
+    if (this._buffers.length !== 0) {
+        this._buffers.unshift(this._offset === 0 ? this._buffer : this._buffer.slice(this._offset));
+        this._buffers.push(buffer);
+        this._buffer = Buffer.concat(this._buffers);
+        this._buffers = [];
+        this._big_offset = 0;
+        this._chunks_size = 0;
+    } else if (this._offset &gt;= this._buffer.length) {
+        this._buffer = buffer;
+    } else {
+        this._buffer = Buffer.concat([this._buffer.slice(this._offset), buffer]);
+    }
+    this._offset = 0;
+    this._protocol_error = true;
+    this.run();
+};
+&nbsp;
+JavascriptReplyParser.prototype.try_parsing = function () {
+    // Set a rewind point. If a failure occurs, wait for the next execute()/append() and try again
+    var offset = this._offset - 1;
+    try {
+        return this._parseResult(this._type);
+    } catch (err) {
+        // Catch the error (not enough data), rewind if it's an array,
+        // and wait for the next packet to appear
+        this._offset = offset;
+        this._protocol_error = false;
+        return void 0;
+    }
+};
+&nbsp;
+JavascriptReplyParser.prototype.run = function (buffer) {
+    this._type = this._buffer[this._offset++];
+    var reply = this.try_parsing();
+&nbsp;
+    while (reply !== undefined) {
+        if (this._type === 45) { // Errors -
+            this.send_error(reply);
+        } else {
+            this.send_reply(reply); // Strings + // Integers : // Bulk strings $ // Arrays *
+        }
+        this._type = this._buffer[this._offset++];
+        reply = this.try_parsing();
+    }
+    if (this._type !== undefined &amp;&amp; this._protocol_error === true) {
+        // Reset the buffer so the parser can handle following commands properly
+        this._buffer = new Buffer(0);
+        this.send_error(new Error('Protocol error, got "' + String.fromCharCode(this._type) + '" as reply type byte'));
+    }
+};
+&nbsp;
+JavascriptReplyParser.prototype.parseHeader = function () {
+    var end   = this._packetEndOffset(),
+        value = this._buffer.toString('ascii', this._offset, end) | 0;
+&nbsp;
+    this._offset = end + 2;
+    return value;
+};
+&nbsp;
+JavascriptReplyParser.prototype._packetEndOffset = function () {
+    var offset = this._offset,
+        len = this._buffer.length - 1;
+&nbsp;
+    while (this._buffer[offset] !== 0x0d &amp;&amp; this._buffer[offset + 1] !== 0x0a) {
+        offset++;
+&nbsp;
+        if (offset &gt;= len) {
+            throw new IncompleteReadBuffer('Did not see LF after NL reading multi bulk count (' + offset + ' =&gt; ' + this._buffer.length + ', ' + this._offset + ')');
+        }
+    }
+    return offset;
+};
+&nbsp;
+exports.Parser = JavascriptReplyParser;
+exports.name = 'javascript';
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Nov 23 2015 23:43:02 GMT+0100 (CET)</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
