@@ -217,13 +217,13 @@ npm install
 Run the tutorial (each file is numbered)
 ====================
 ```Terminal
-node '1 - Introduction.js'
+node '01 - Introduction.js'
 ```
 ```Terminal
-node '2 - Events.js'
+node '02 - Events.js'
 ```
 ```Terminal
-node '3 - Streams.js'
+node '03 - Streams.js'
 ```
 
 Contact
