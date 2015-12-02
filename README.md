@@ -214,7 +214,7 @@ Install
 npm install
 ```
 
-Run and Learn (each file is numbered)
+Run the tutorial (each file is numbered)
 ====================
 ```Terminal
 node '1 - Introduction.js'
