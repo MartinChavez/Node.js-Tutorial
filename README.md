@@ -223,7 +223,7 @@ node '1 - Introduction.js'
 node '2 - Events.js'
 ```
 ```Terminal
-node '.\3 - Streams.js'
+node '3 - Streams.js'
 ```
 
 Contact
