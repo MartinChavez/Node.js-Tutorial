@@ -8,11 +8,11 @@ Modules:
 var moduleFunction = function(){
     console.log("Module loaded");
 }
-// In order to expaose this method (make it public), we need to use module.exports
+// In order to expose this method (make it public), we need to use module.exports
 // 'exports' defines what 'require' returns
 module.exports = moduleFunction;
 
-// Explicitly setting a function as a public method (same behaviour as previous syntax)
+// Explicitly setting a function as a public method (same behavior as previous example)
 /*
  exports.moduleExport = function(){
  console.log("Module loaded by using exports");
