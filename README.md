@@ -219,6 +219,12 @@ Run and Learn (each file is numbered)
 ```Terminal
 node '1 - Introduction.js'
 ```
+```Terminal
+node '2 - Events.js'
+```
+```Terminal
+node '.\3 - Streams.js'
+```
 
 Contact
 ====================
