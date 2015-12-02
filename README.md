@@ -208,6 +208,17 @@ module.exports = moduleFunction;
  To run, go to "8 - Module Loader"
 */
 ```
+Install
+====================
+```Terminal
+npm install
+```
+
+Run and Learn (each file is numbered)
+====================
+```Terminal
+node '1 - Introduction.js'
+```
 
 Contact
 ====================
