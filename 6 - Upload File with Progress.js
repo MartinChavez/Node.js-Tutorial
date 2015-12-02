@@ -32,15 +32,15 @@ http.createServer(function (request, response) {
 
 console.log('Listening on port 8080...');
 /*
-Run the following cmd to start node and read the file
+ Run the following cmd to start node and read the file
 
  node '.\6 - Upload File with Progress.js'
 
-Run the following cmd to make an HTTP request(including a file) to your local server:
+ Run the following cmd to make an HTTP request(including a file) to your local server:
 
  curl --upload-file largeFile.txt http://localhost:8080
 
-Expected response:
+ Expected response:
 
  - A copy of largeFile should be created in your file system
  - You should see the progress printed on the cmd
