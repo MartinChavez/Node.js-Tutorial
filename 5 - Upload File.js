@@ -5,8 +5,8 @@
 var fs = require('fs');
 var http = require('http');
 // This example reads from the request and pipes it to a file
-http.createServer(function(request, response){
-    var writeFile =  fs.createWriteStream("README_copy.md");
+http.createServer(function (request, response) {
+    var writeFile = fs.createWriteStream("README_copy.md");
     request.pipe(writeFile);
 
     request.on('end', function () {
@@ -24,7 +24,7 @@ http.createServer(function(request, response){
 
  Expected response:
 
-- A copy of README.md should be created in your file system
-- The HTTP response should be 'uploaded'
+ - A copy of README.md should be created in your file system
+ - The HTTP response should be 'uploaded'
 
  */
