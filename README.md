@@ -168,7 +168,7 @@ console.log('Listening on port 8080...');
 /*
  Run the following cmd to start node and run the server:
 
- node '.\3 - Streams.js'
+ node '3 - Streams.js'
 
  Run the following cmd to make an HTTP request to your local server:
 
