@@ -17,7 +17,7 @@ readFile.pipe(writeFile);
 /*
  Run the following cmd to start node and read the file
 
- node '.\4 - File System.js'
+ node '.\04 - File System.js'
 
  Expected response:
 
