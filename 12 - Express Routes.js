@@ -1,4 +1,4 @@
-/* Express Roputes */
+/* Express Routes */
 
 var express = require('express');
 var request = require('request');
@@ -10,9 +10,9 @@ var app = express();
 // By using ':', we specify that we will use a dynamic parameter
 app.get('/images/:email', function (req, response) {
 
-    // Use the infoirmation from the request parameters
+    // Use the information from the request parameters
     var email = req.params.email;
-    // The gravatar API requires a Hash of the email
+    // The gravatar API requires a Hash of the 'email' parameter
     var hash = crypto.createHash('md5').update(email).digest('hex');
 
     // As usual, it is possible to specify the set of options in an object
@@ -34,12 +34,12 @@ app.get('/images/:email', function (req, response) {
 app.listen(8080);
 
 /*
-Run the following cmd to start node and create the end-point:
+ Run the following cmd to start node and create the end-point:
  node '.\12 - Express Routes.js'
 
-Run the following cmd to make an HTTP to your local server:
+ Run the following cmd to make an HTTP to your local server:
  curl -s http://localhost:8080/images/<gravatar_email>
-On a browser: http://localhost:8080/images/<gravatar_email>
+ On a browser: http://localhost:8080/images/<gravatar_email>
 
  Expected response:
  - On the browser: The avatar image should be displayed
