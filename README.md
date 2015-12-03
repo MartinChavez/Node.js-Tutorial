@@ -74,7 +74,7 @@ http.createServer(function (request, response) {
 console.log('Listening on port 8080...');
 
 /* Run the following cmd to start node and run the server
- node '1 - Introduction.js'
+ node '01 - Introduction.js'
  */
 
 /* Run the following cmd to make an HTTP request to your local server (you should get a response)
@@ -107,7 +107,7 @@ logger.emit('error', 'This is the first error');
 logger.emit('error', 'This is the second error');
 
 /* Run the following cmd to start node and listen/generate events
- node '2 - Events.js'
+ node '02 - Events.js'
 
  You should see the following output:
 
@@ -168,7 +168,7 @@ console.log('Listening on port 8080...');
 /*
  Run the following cmd to start node and run the server:
 
- node '3 - Streams.js'
+ node '03 - Streams.js'
 
  Run the following cmd to make an HTTP request to your local server:
 
