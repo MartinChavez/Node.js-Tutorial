@@ -1,5 +1,5 @@
 /* Http request Module */
-
+// The following example demonstrates how to create an http request with Node.js
 var http = require('http');
 
 var makeRequest = function (message) {
