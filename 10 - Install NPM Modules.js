@@ -20,7 +20,7 @@
 // 'npm search <module>'
 
 // Best Practice: When creating a node project, you should create a package.json file where you can specify
-// multiple options (name, version, etc), but the most important aspect, is to specify the dependencies,in other words,
+// multiple options (name, version, etc), but the most important aspect, is to specify the dependencies, in other words,
 // the modules that your application needs in order to be able to run.
 
 // Once the dependencies have been specified, you can verify that they are installed by running:
