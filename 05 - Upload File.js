@@ -16,7 +16,7 @@ http.createServer(function (request, response) {
 /*
  Run the following cmd to start node and read the file
 
- node '.\5 - Upload File.js'
+ node '.\05 - Upload File.js'
 
  Run the following cmd to make an HTTP request(including a file) to your local server:
 

@@ -19,7 +19,7 @@ makeRequest('http req 2');
 /*
  Run the following cmd to start node and load the custom module
 
- node '.\8 - Module Loader.js'
+ node '.\08 - Module Loader.js'
 
  Expected response:
 
