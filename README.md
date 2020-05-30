@@ -1,4 +1,4 @@
-<a name="README"><img src="https://martinchavez.dev/assets/img/portfolio/grid/identity/NodeJS.png" heigth="300px" width="300px"/></a>
+<a name="README"><img src="https://martinchavez.github.io/Assets/Logos/nodejsfull.svg"" heigth="300px" width="300px"/></a>(https://nodejs.org)</a>
 
 # Node.js: Tutorial
 
