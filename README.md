@@ -1,4 +1,4 @@
-<a name="README"><img src="https://martinchavez.github.io/Assets/Logos/nodejsfull.svg"" heigth="300px" width="300px"/></a>(https://nodejs.org)</a>
+<a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/nodejsfull.svg" heigth="300px" width="300px"/>](https://nodejs.org)
 
 # Node.js: Tutorial
 
